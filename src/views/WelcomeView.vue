@@ -1,9 +1,11 @@
 <script setup lang="ts">
+import { ref } from 'vue';
+
 const greeting = "Welcome to this site";
-let message = 'This site contains information about available jobs.';
+const message = ref('This site contains information about available jobs.');
 
 const changeMessage = () => {
-	message = 'This site also contains skills you need for IT jobs.';
+	message.value = 'This site also contains skills you need for IT jobs.';
 }
 </script>
 
